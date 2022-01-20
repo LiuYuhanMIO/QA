@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>问答系统</title>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" type="text/css" href="/static/css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css"/>
+
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/backstretch.js"></script>
+    <script type="text/javascript" src="/static/js/main1.js"></script>
+	<script type="text/javascript" src="/static/js/main.js"></script>
+    <script type="application/x-javascript" src="/static/js/Bmob-2.2.5.min.js"></script>
+
+</head>
+<body>
+
+	<section class="content wrapper">
+
+		<h1>故障领域问答系统</h1>
+		<br><br>
+		<h2>修改密码</h2>
+
+		<div class="subscription_form clearfix">
+			<div>
+				<form >
+					<input type="text" id="pwd_old" placeholder="请输入旧密码">
+					<button type="submit" ><i class="lockicon"></i></button>
+
+				</form>
+			</div>
+		</div>
+
+        <div class="subscription_form clearfix">
+			<div>
+                <form >
+					<input type="password" id="pwd_new" placeholder="请输入新密码">
+					<button type="submit"><i class="lockicon"></i></button>
+				</form>
+			</div>
+		</div>
+
+        <div class="subscription_form clearfix">
+			<div>
+                <form >
+					<input type="password" id="pwd_new2" placeholder="请确认密码">
+					<button type="submit"><i class="lockicon"></i></button>
+				</form>
+			</div>
+		</div>
+
+        <div class="subscription_form clearfix">
+			<div>
+                <form >
+					<input type="button" value="确认修改" onclick="reset()" class="right_btn"/>
+					<a href="http://127.0.0.1:8080/login"><input type="button" value="重新登陆"  class="left_btn"/></a>
+				</form>
+
+			</div>
+		</div>
+
+
+	</section>
+
+</body>
+</html>

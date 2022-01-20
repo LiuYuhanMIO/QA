@@ -1,0 +1,342 @@
+
+
+
+/*  General CSS*/
+
+h1, h2, h3, h4, h5 ,h6{
+    color: #ffffff;
+    font-family: "Aleo-Regular", arial;
+    letter-spacing: 1px;
+}
+
+h1              { font-size: 2em;}
+h2              { font-size: 1.5em;}
+h3              { font-size: 1.17em;}
+h5              { font-size: .83em;}
+h6              { font-size: .75em;}
+h1, h2, h3, h4,
+h5, h6          { font-weight: bolder }
+
+.clearfix:before,  
+.clearfix:after {  
+    content: "";  
+    display: table;  
+}  
+.clearfix:after {  
+    clear: both;  
+}  
+ 
+.clearfix {  
+    *zoom: 1;  
+}
+
+.wrapper{
+    width: 790px;
+    margin: 0 auto;
+}
+
+
+
+
+
+.content{
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    z-index: 5;
+    text-align: center;
+}
+
+.content H1{
+    color: #fff;
+    font-family: "Aleo-Bold", arial;
+    font-size: 56px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.content p{
+    color: #fff;
+    font-family: "Aleo-Regular", arial;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.content p.description{
+    margin-top: 20px;
+}
+
+.content .subscription_form{
+    width: 401px;
+    margin: 60px auto 0 auto;
+    position: relative;
+}
+
+.content .subscription_form > div:before,
+.content .subscription_form > div:after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: rgba(255, 255, 255, .3);
+    position: absolute;
+    top: 50%;
+}
+
+.content .subscription_form > div:before{
+    left: -35%;
+}
+.content .subscription_form > div:after{
+    right: -35%;
+}
+
+.subscription_form form input[type=email],
+.subscription_form form input[type=password],
+.subscription_form form input[type=text]{
+    display: block;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    color: #4169E1;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: none;
+    float: left;
+    margin: 0;
+    border: 0;
+    font-family: 'Aleo-Regular', arial;
+}
+
+.left_btn{
+    width: 150px;
+    padding: 20px;
+    background-color: #fff;
+    color: #4169E1;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: none;
+    float:left;
+    margin: 0;
+    border: 0;
+    font-family: 'Aleo-Regular', arial;
+}
+
+.right_btn{
+    width: 150px;
+    padding: 20px;
+    background-color: #6495ED;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: none;
+    float:right;
+    margin: 0;
+    border: 0;
+    font-family: 'Aleo-Regular', arial;
+}
+
+.show_text{
+    width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    color: #4169E1;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: none;
+    height: 240px;
+    margin: 0;
+    border: 0;
+    font-family: 'Aleo-Regular', arial;
+}
+
+.administor_btn{
+    
+    width: 130px;
+    padding: 20px;
+    background-color: #fff;
+    color: #4169E1;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: none;
+    margin: 0;
+    border: 50;
+    font-family: 'Aleo-Regular', arial;
+}
+
+.subscription_form form input[type=email]::-webkit-input-placeholder,
+.subscription_form form input[type=password]::-webkit-input-placeholder,
+.subscription_form form input[type=text]::-webkit-input-placeholder{
+   color: #B0C4DE;
+}
+
+.subscription_form form input[type=email]::-moz-placeholder,
+.subscription_form form input[type=password]::-moz-placeholder,
+.subscription_form form input[type=text]::-moz-placeholder{
+   color: #B0C4DE;
+}
+
+.subscription_form form input[type=email]::-moz-placeholder,
+.subscription_form form input[type=password]::-moz-placeholder,
+.subscription_form form input[type=text]::-moz-placeholder{
+   color: #B0C4DE;
+}
+
+.subscription_form form input[type=email]::-ms-input-placeholder,  
+.subscription_form form input[type=password]::-ms-input-placeholder, 
+.subscription_form form input[type=text]::-ms-input-placeholder{  
+   color: #B0C4DE;
+} 
+
+.subscription_form form button{
+    display: block;
+    width: 62px;
+    height: 59px;
+    background: #ffffff;
+    border: 0;
+    float: left;
+    margin-left: -1px;
+    outline: none;
+}
+
+.subscription_form form button:hover{
+    cursor: pointer;
+}
+
+.subscription_form form .mailicon{
+    display: block;
+    width: 26px;
+    height: 19px;
+    background: url("../img/mail_icon.png") no-repeat;
+    margin-left: 10px;
+}
+
+.subscription_form form .lockicon{
+    display: block;
+    width: 26px;
+    height: 19px;
+    background: url("../img/lock_icon.png") no-repeat;
+    margin-left: 10px;
+}
+
+
+.subscription_form form .loading{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/load.gif") no-repeat;
+    margin-left: 20px;
+}
+
+
+.back_img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    z-index: -5;
+    background: #50cda7 url('/static/img/bg_img.jpg') no-repeat;
+    background-position: center 0;
+    overflow: hidden;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+
+
+/*  Tooltip  */
+.tooltip{
+    display: block;
+    padding: 10px 20px;
+    background: #454545;
+    color: #fff;
+    font-family: "Aleo-Regular", arial;
+    font-size: 13px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 4;
+    opacity: 0;
+    text-align: center;
+    letter-spacing: .5px;
+
+}
+
+.tooltip:after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 3px 3px 0 3px;
+    border-color: #454545 transparent transparent transparent;
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    margin-left: -3px;
+}
+
+
+#msg{
+        width:266px;
+        position: fixed;
+        z-index:4;
+        top: 49%;
+        margin-top:-80px;
+        left:50%;
+        margin-left:-133px;
+        background:#fff;
+        box-shadow:5px 5px 8px #999;
+        font-size:17px;
+        color:#666;
+        border:1px solid #f8f8f8;
+        text-align: center;
+        line-height: 2rem;
+        display:inline-block;
+        padding-bottom:20px;
+        border-radius:2px;
+        z-index:6;
+    }
+    #msg_top{
+        background:#f8f8f8;
+        padding:5px 15px 5px 20px;
+        text-align:left;
+    }
+    #msg_top span{
+        font-size:22px;
+        float:right;
+        cursor:pointer;
+    }
+    #msg_cont{
+        padding:15px 20px 20px;
+        text-align:left;
+    }
+    #msg_clear{
+        display:inline-block;
+        color:#fff;
+        padding:1px 15px;
+        background:#00BFFF;
+        border-radius:2px;
+        float:right;
+        margin-right:15px;
+        cursor:pointer;
+    }
+
+
+.msg_score{
+    background-color: transparent;
+    font-size: 15px;
+    letter-spacing: 2px;
+    outline: none;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
